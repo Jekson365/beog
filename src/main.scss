@@ -1,0 +1,349 @@
+.navigation {
+    max-width: 1350px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+* {
+    transition: 0.3s;
+    list-style-type: none;
+}
+
+#logo {
+    width: 130px;
+}
+
+.nav-item {
+    width: 100%;
+
+    a {
+        font-weight: 500;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.vh-100 {
+    min-height: 100vh;
+    height: fit-content !important;
+}
+
+.contact {
+    background-color: black;
+    outline: 0;
+    border: 0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 23px;
+    font-weight: bold;
+}
+
+.poster {
+    padding: 10px;
+    max-width: 640px;
+    height: 500px;
+    box-shadow: 0 0 30px 0.1px rgba(0, 0, 0, 0.248);
+    border-radius: 10px;
+
+    .image-place {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 80%;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h3,
+    p {
+        padding: 0 10px;
+    }
+
+    p {
+        padding-top: 5px;
+    }
+}
+
+.switch {
+    display: none;
+}
+
+.bg-blur {
+    position: absolute;
+    left: auto;
+    top: -40px;
+    right: 0%;
+    bottom: auto;
+    z-index: -1;
+    width: 800px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f4e684), color-stop(50%, #f24689), to(#a677ef));
+    background-image: linear-gradient(90deg, #f4e684, #f24689 50%, #a677ef);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+}
+
+.sec_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content !important;
+    margin: 0 auto;
+}
+
+.sec_2 {
+    padding: 20px;
+    margin: 100px auto;
+    min-height: 100vh;
+}
+
+.poster_2 {
+    margin: 20px 0;
+    box-shadow: 0 0 30px 0.1px rgba(0, 0, 0, 0.242);
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .img-r-2 {
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    text-align: center;
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.mail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        outline: 0.3px solid rgb(190, 190, 190);
+        width: 100%;
+
+        :focus {
+            outline: 1px solid rgb(117, 117, 117);
+        }
+    }
+
+    input,
+    button {
+        border: 0;
+        border-radius: 7px;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    button {
+        background-color: black;
+        color: white;
+    }
+}
+
+.popular {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 0 0 30px 0.1px rgba(0, 0, 0, 0.201);
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .img-p {
+        overflow: hidden;
+        width: 480px;
+        height: 100%;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 90%;
+    }
+}
+
+.each {
+    width: 280px;
+    height: 311px;
+    background-color: white;
+    box-shadow: 0 0 40px 0.1px rgba(0, 0, 0, 0.156);
+    border-radius: 20px;
+    padding: 10px;
+    .image-pp {
+        height: 55%;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.cntr {
+    margin: 0 auto !important;
+}
+
+.grid-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 30px;
+
+}
+
+@media screen and (min-width:968px) {
+    .poster_2 {
+        transform: translateX(30px);
+    }
+}
+
+@media screen and (max-width:968px) {
+    .act {
+        opacity: 1;
+        overflow: visible;
+    }
+
+    .grid-row {
+        grid-template-columns: 1fr 1fr;
+        .each {
+            width: 100%;
+        }
+    }
+
+    .poster_2 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .popular {
+        height: fit-content;
+        flex-direction: column !important;
+
+        .img-p {
+            width: 100%;
+        }
+
+        .content {
+            height: 50%;
+            padding: 10px 0;
+        }
+    }
+
+    .de-act {
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .poster {
+        height: 300px;
+
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .wrapper {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .switch {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    .da-a {
+        display: none;
+    }
+
+    .daa {
+        flex-direction: column;
+        position: absolute;
+        text-align: start;
+        top: 60px;
+        text-align: left;
+        justify-content: flex-start;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        display: flex;
+        box-shadow: 0 5px 10px 0.1px rgba(0, 0, 0, 0.257);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .grid-row {
+        grid-template-columns: 1fr;
+    }
+    .each {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:468px) {
+    .each {
+        width: 100%;
+    }
+
+}
