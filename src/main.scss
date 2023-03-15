@@ -98,10 +98,19 @@
     margin: 0 auto;
 }
 
+.dasas {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 0.1px rgba(0, 0, 0, 0.281);
+}
 .sec_2 {
     padding: 20px;
     margin: 100px auto;
     min-height: 100vh;
+}
+img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .poster_2 {
