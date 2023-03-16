@@ -45,22 +45,6 @@ export const Sec_3 = () => {
                         })}
                     </div>
                 </div>
-                <div className="container-fluid" style={{"marginTop":"100px"}}>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <h3>Ready to grow your Busniess?</h3>
-                            <p className="p">It is a long established fact that a reader will be distracted.</p>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="mail">
-                                <input type="text"
-                                    placeholder='Search...'
-                                    name="" id="" />
-                                <button>Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <Footer/>
             </div>
             

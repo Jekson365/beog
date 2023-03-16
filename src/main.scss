@@ -235,7 +235,7 @@ img:hover {
 }
 
 .grid-row {
-    width: 100%;
+    width: 100%;    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: auto;
@@ -243,17 +243,93 @@ img:hover {
     grid-gap: 30px;
 
 }
+.mww-1200 {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.mw-1200 {
+
+    padding: 10px;
+    max-width: 1440px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0.1px rgba(0, 0, 0, 0.267);
+    min-height:300px;
+    height: fit-content;
+
+    .image-place-2 {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    .content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+    }
+
+}
+.pop-grid {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .pop-box {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0 0 40px 0.1px rgba(0, 0, 0, 0.205);
+        width: 300px;
+        height: fit-content;
+        border-radius: 10px;
+        .im-area {
+            border-radius: 5px;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: coverr;
+            }
+        }
+    }
+}
+
 
 @media screen and (min-width:968px) {
     .poster_2 {
         transform: translateX(30px);
     }
+    
 }
 
 @media screen and (max-width:968px) {
     .act {
         opacity: 1;
         overflow: visible;
+    }
+    .pop-grid {
+        .pop-box {
+            width: 250px;
+        }
+    }
+    .pop-grid {
+        grid-template-columns: 2fr 2fr;
     }
 
     .grid-row {
@@ -353,6 +429,9 @@ img:hover {
 @media screen and (max-width:468px) {
     .each {
         width: 100%;
+    }
+    .pop-grid {
+        grid-template-columns: 1fr;
     }
 
 }
