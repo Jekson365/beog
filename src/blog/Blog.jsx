@@ -7,6 +7,21 @@ export const Blog = () => {
 
     const arr = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13];
 
+    const content = [
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51d86c99be32598f71408_blog-12.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51f34228f090cefafd606_blog-11.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51d7c722f478d5f24ae7d_blog-10.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51d3d5f5d672728453cea_blog-09.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51c57dc11674e378a8746_blog-08.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51c0485640e06e621e98e_blog-07-p-500.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51b56decf1b2517eaa7e9_blog-06-p-500.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63e51aeac99be3a7b8f6e812_blog-05-p-500.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63d6a035d504155c78c948db_blog-04-p-500.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63d69b3f737d36d1749d590c_blog-03-p-500.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63d615d65236772a992900be_blog-01.jpg",
+        "https://assets.website-files.com/63d6118fac19915fe3a7b107/63d6187baac0be9d99392f71_blog-02.jpg"
+    ]
+
     return (
         <>
             <Navbar />
@@ -42,10 +57,10 @@ export const Blog = () => {
                 <div className="">
                     <h1 className='text-left' style={{"marginLeft":"5vw"}}>Most Popular</h1>
                     <div className="pop-grid">
-                        {arr.map((each) => {
+                        {content.map((each) => {
                             return (
                                 <>
-                                    <Popular />
+                                    <Popular items={each} />
                                 </>
                             )
                         })}

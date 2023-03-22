@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Blog } from './blog/Blog'
+import { About } from './about/About'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -11,6 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App/>}>
         </Route>
         <Route path='/blog' element={<Blog/>}>
+        </Route>
+        <Route path='/contact' element={<About/>}>
         </Route>
       </Routes>
     </BrowserRouter>

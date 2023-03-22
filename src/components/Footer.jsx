@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
 
         <>
-            <div className="mww-1200">
+            <div className="mww-1200" style={{"maxWidth":"1260px"}}>
                 <div className="row">
 
                     <div className="container-fluid" style={{ "marginTop": "100px" }}>
